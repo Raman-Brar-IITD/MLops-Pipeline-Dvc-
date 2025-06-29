@@ -3,3 +3,13 @@
 2025-06-29 08:33:55,110 - Model Building - DEBUG - Model training started with 4190 samples
 2025-06-29 08:33:55,528 - Model Building - DEBUG - Model training Completed
 2025-06-29 08:33:55,537 - Model Building - DEBUG - Model saved to models/model.pkl
+2025-06-29 09:02:03,684 - Model Building - DEBUG - Data loaded succesfully from :./data/processed/train_tfidf.csv
+2025-06-29 09:02:03,686 - Model Building - DEBUG - Initilization Of Random Forest STARTED
+2025-06-29 09:02:03,687 - Model Building - DEBUG - Model training started with 4190 samples
+2025-06-29 09:02:04,042 - Model Building - DEBUG - Model training Completed
+2025-06-29 09:02:04,047 - Model Building - DEBUG - Model saved to models/model.pkl
+2025-06-29 09:19:41,234 - Model Building - DEBUG - Data loaded succesfully from :./data/processed/train_tfidf.csv
+2025-06-29 09:19:41,234 - Model Building - DEBUG - Initilization Of Random Forest STARTED
+2025-06-29 09:19:41,234 - Model Building - DEBUG - Model training started with 4190 samples
+2025-06-29 09:19:41,615 - Model Building - DEBUG - Model training Completed
+2025-06-29 09:19:41,615 - Model Building - DEBUG - Model saved to models/model.pkl
