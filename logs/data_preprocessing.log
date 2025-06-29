@@ -1,0 +1,78 @@
+2025-06-28 23:18:18,512 - data_preprocessing - ERROR - File not found : [Errno 2] No such file or directory: './data/train.csv'
+2025-06-28 23:35:44,481 - data_preprocessing - ERROR - File not found : [Errno 2] No such file or directory: './data/train.csv'
+2025-06-28 23:36:43,674 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:36:43,674 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:36:43,696 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:36:43,703 - data_preprocessing - ERROR - Error during text encoding: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Raman/nltk_data'
+    - 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\nltk_data'
+    - 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\share\\nltk_data'
+    - 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\lib\\nltk_data'
+    - 'C:\\Users\\Raman\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-06-28 23:36:43,705 - data_preprocessing - ERROR - Failed to complete the data transformation process: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Raman/nltk_data'
+    - 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\nltk_data'
+    - 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\share\\nltk_data'
+    - 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\lib\\nltk_data'
+    - 'C:\\Users\\Raman\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-06-28 23:38:18,326 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:38:18,326 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:38:18,326 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:38:42,561 - data_preprocessing - DEBUG - text column transformed
+2025-06-28 23:38:42,561 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:38:42,561 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:38:42,577 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:39:10,166 - data_preprocessing - DEBUG - text column transformed
+2025-06-28 23:39:10,166 - data_preprocessing - ERROR - Failed to complete the data transformation process: join() argument must be str, bytes, or os.PathLike object, not 'DataFrame'
+2025-06-28 23:41:37,169 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:41:37,172 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:41:37,174 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:42:03,640 - data_preprocessing - DEBUG - text column transformed
+2025-06-28 23:42:03,640 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:42:03,640 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:42:03,640 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:42:31,645 - data_preprocessing - DEBUG - text column transformed
+2025-06-28 23:42:31,645 - data_preprocessing - ERROR - Failed to complete the data transformation process: join() argument must be str, bytes, or os.PathLike object, not 'DataFrame'
+2025-06-28 23:43:00,681 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:43:00,681 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:43:00,681 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:43:26,275 - data_preprocessing - DEBUG - text column transformed
+2025-06-28 23:43:26,275 - data_preprocessing - DEBUG - Starting encoding preprocessing for DataFrame
+2025-06-28 23:43:26,275 - data_preprocessing - DEBUG - Target column encoded
+2025-06-28 23:43:26,275 - data_preprocessing - DEBUG - duplicates removed
+2025-06-28 23:43:54,992 - data_preprocessing - DEBUG - text column transformed
+2025-06-28 23:43:55,011 - data_preprocessing - DEBUG - Preprocessed data saved to: ./data\interim
