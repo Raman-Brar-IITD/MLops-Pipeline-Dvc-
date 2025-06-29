@@ -120,6 +120,7 @@ def main():
         
         model_save_path = 'models/model.pkl'
         save_model(clf, model_save_path)
+        
 
     except Exception as e:
         logger.error('Failed to complete the model building process: %s', e)
