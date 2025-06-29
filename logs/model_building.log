@@ -13,3 +13,9 @@
 2025-06-29 09:19:41,234 - Model Building - DEBUG - Model training started with 4190 samples
 2025-06-29 09:19:41,615 - Model Building - DEBUG - Model training Completed
 2025-06-29 09:19:41,615 - Model Building - DEBUG - Model saved to models/model.pkl
+2025-06-29 09:36:02,359 - Model Building - DEBUG - Parameters retrieved from params.yaml
+2025-06-29 09:36:02,381 - Model Building - DEBUG - Data loaded succesfully from :./data/processed/train_tfidf.csv
+2025-06-29 09:36:02,382 - Model Building - DEBUG - Initilization Of Random Forest STARTED
+2025-06-29 09:36:02,382 - Model Building - DEBUG - Model training started with 4190 samples
+2025-06-29 09:36:02,650 - Model Building - DEBUG - Model training Completed
+2025-06-29 09:36:02,665 - Model Building - DEBUG - Model saved to models/model.pkl
