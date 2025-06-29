@@ -6,7 +6,7 @@ import json
 from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score
 import logging
 import yaml
-from dvclive import Live # type: ignore
+from dvclive import Live
 
 # Ensure the "logs" directory exists
 log_dir = 'logs'
@@ -29,6 +29,7 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+
 def load_params(params_path: str) -> dict:
     """Load parameters from a YAML file."""
     try:
@@ -60,7 +61,6 @@ def load_model(file_path: str):
         logger.error('Unexpected error occurred while loading the model: %s', e)
         raise
 
-
 def load_data(file_path: str) -> pd.DataFrame:
     """Load data from a CSV file."""
     try:
@@ -73,6 +73,7 @@ def load_data(file_path: str) -> pd.DataFrame:
     except Exception as e:
         logger.error('Unexpected error occurred while loading the data: %s', e)
         raise
+
 def evaluate_model(clf, X_test: np.ndarray, y_test: np.ndarray) -> dict:
     """Evaluate the model and return the evaluation metrics."""
     try:
@@ -111,20 +112,20 @@ def save_metrics(metrics: dict, file_path: str) -> None:
 
 def main():
     try:
-        params = load_params('params.yaml')
+        params = load_params(params_path='params.yaml')
         clf = load_model('./models/model.pkl')
         test_data = load_data('./data/processed/test_tfidf.csv')
         
         X_test = test_data.iloc[:, :-1].values
         y_test = test_data.iloc[:, -1].values
 
-        metrics = evaluate_model(clf, X_test, y_test) # type: ignore
+        metrics = evaluate_model(clf, X_test, y_test)
 
-        #Experiment tracking using dvclive
+        # Experiment tracking using dvclive
         with Live(save_dvc_exp=True) as live:
-            live.log_metric('accuracy', accuracy_score(y_test, y_test)) # type: ignore
-            live.log_metric('precision', precision_score(y_test, y_test)) # type: ignore
-            live.log_metric('recall', recall_score(y_test, y_test)) # type: ignore
+            live.log_metric('accuracy', accuracy_score(y_test, y_test))
+            live.log_metric('precision', precision_score(y_test, y_test))
+            live.log_metric('recall', recall_score(y_test, y_test))
 
             live.log_params(params)
         
